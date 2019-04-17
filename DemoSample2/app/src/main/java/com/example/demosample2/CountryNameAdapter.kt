@@ -11,7 +11,7 @@ class CountryNameAdapter(val items: ArrayList<String>, val context: Context) : R
 
 
     override fun onCreateViewHolder(parent: ViewGroup, p1: Int): CountryHolder {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
 
         val inflater = LayoutInflater.from(parent.context)
         return CountryHolder(inflater, parent)
@@ -26,7 +26,7 @@ class CountryNameAdapter(val items: ArrayList<String>, val context: Context) : R
 
 
     override fun onBindViewHolder(holder: CountryHolder, p1: Int) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
       val name = items[p1]
       holder.bindView(name)
     }
@@ -42,7 +42,7 @@ class CountryHolder(inflater: LayoutInflater, parent: ViewGroup) :
     }
 
     fun bindView(name: String) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
         mTitleView?.text = name;
 
     }

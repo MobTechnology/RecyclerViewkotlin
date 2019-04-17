@@ -12,27 +12,27 @@ import kotlinx.android.synthetic.main.activity_fullscreen.*
  */
 class FullscreenActivity : AppCompatActivity() {
 
-    val array = arrayListOf<String>()
+    val array: ArrayList<String> = ArrayList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fullscreen)
 
-        array.set(0, "India")
-        array.set(1, "Aus")
-        array.set(2, "Canada")
-        array.set(3, "Punjab")
-        array.set(4, "Nepal")
-        array.set(5, "Putan")
-        array.set(6, "Japan")
-        array.set(7, "Shri")
-        array.set(8, "Shri Lanka")
-        array.set(9, "England")
-        array.set(10, "Itali")
-        array.set(11, "Itali")
+        array.add("India")
+        array.add("Aus")
+        array.add("Canada")
+        array.add("Punjab")
+        array.add("Nepal")
+        array.add("Putan")
+        array.add("Japan")
+        array.add("Shri")
+        array.add("Shri Lanka")
+        array.add("England")
+        array.add("Itali")
+        array.add("Itali")
 
         countryNameList.layoutManager = LinearLayoutManager(this)
-        countryNameList.layoutManager = GridLayoutManager(this, 2)
+
         countryNameList.adapter = CountryNameAdapter(array, this)
 
 
